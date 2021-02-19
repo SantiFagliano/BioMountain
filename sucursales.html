@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sucursales - BIO MOUNTAIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/estilos.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="favicon-32x32" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="favicon-16x16" sizes="16x16" href="img/favicon-16x16.png">
+</head>
+
+<body>
+    <header class="nav">
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
+                <a class="black-text" href="index.html" class=""><img class="logo_Nav" src="img/logoGrande.jpg" alt="Logo - BioMountain" /></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="a_menu" href="index.html">Inicio</a></li>
+                    <li><a class="a_menu" href="productos.html">Productos</a></li>
+                    <li><a class="a_menu" href="contacto.html">Contacto</a></li>
+                    <li class="active"><a class="a_menu" href="sucursales.html">Sucursales</a></li>
+                </ul>
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a class="a_menu" href="index.html">Inicio</a></li>
+                    <li><a class="a_menu" href="productos.html">Productos</a></li>
+                    <li><a class="a_menu" href="contacto.html">Contacto</a></li>
+                    <li><a class="a_menu" href="sucursales.html">Sucursales</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i
+                        class="black-text material-icons">menu</i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main_Home">
+        <div class="sucursalesBanner">
+            <div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot">
+                    <div class="container">
+                        <br /><br />
+                        <h1 class="header center text-lighten-2 titulo_Slider">
+                            <br> NUESTRAS SUCURSALES
+                        </h1>
+                    </div>
+                </div>
+                <div class="parallax">
+                    <img src="img/sucursales.jpg" alt="Imagen sucursales" />
+                </div>
+            </div>
+        </div>
+
+        <section class="container row">
+            <div class="contenedorAbajo col s12 m4">
+                <div class="contenedor-izquierda col s12">
+                    <div class="container section">
+                        <h2 class="green-text">¿Dónde estamos?</h2>
+
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="img/rutas-senderismo-grazalema.jpg" alt="Senderistas Caminando">
+                            </div>
+                            <div class="card-content">
+                                <p>Podés encontrar nuestros locales en diferentes provincias para que disfrutes la experiencia de los productos de Bio Mountain en todo el país. Tenemos sucursales en Ciudad Autónoma de Buenos Aires, Jujuy, Chubut, Mendoza,
+                                    Neuquen y Salta
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="parteAbajoDerecha col s12">
+
+                        <p><i class="tiny material-icons green-text">location_on</i> ¿No encontrás tu provincia?
+                            <br> Podés pedirnos una sucursal mediante <a class="green-text" href="contacto.html">contacto</a>.
+                        </p>
+
+
+                        <p><i class="tiny material-icons green-text">email</i> Si necesitás más información podés consultarnos vía <a class="green-text" href="contacto.html">email</a>.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="divMapa col s12 m8">
+                <div class="row">
+                    <a id="bsas" class="waves-effect waves-light btn green" onclick="mostrarMapaBuenosAires()">CABA</a>
+                    <a id="jujuy" class="waves-effect waves-light btn #a5d6a7 green lighten-3" onclick="mostrarMapaJujuy()">Jujuy</a>
+                    <a id="chubut" class=" waves-effect waves-light btn #a5d6a7 green lighten-3" onclick="mostrarMapaChubut()">Chubut</a>
+                    <a id="mendoza" class="waves-effect waves-light btn #a5d6a7 green lighten-3" onclick="mostrarMapaMendoza()">Mendoza</a>
+                    <a id="neuquen" class="waves-effect waves-light btn #a5d6a7 green lighten-3" onclick="mostrarMapaNeuquen()">Neuquén</a>
+                    <a id="salta" class="waves-effect waves-light btn #a5d6a7 green lighten-3" onclick="mostrarMapaSalta()">Salta</a>
+                </div>
+
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31246.984632601936!2d-58.45746332248552!3d-34.593168524128124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5f680cb2679%3A0x8b0a61b3eb088c0!2sHumboldt%20590%2C%20C1414%20CSL%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1607307750096!5m2!1ses-419!2sar"
+                    width="100%" height="665" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <section class="">
+                <h4 class="ventajas">PUNTOS DE VENTA</h4>
+                <div class="container puntosVenta">
+                    <div class="section">
+                        <div class="row">
+                            <div class="col s12 m4">
+                                <h6 class="center">CABA: Humboldt 590 - Villa Crespo</h6>
+                            </div>
+                            <div class="col s12 m4">
+                                <h6 class="center">Jujuy: Gdor. J. M. Fascio 1020 - S. S. de Jujuy</h6>
+                            </div>
+                            <div class="col s12 m4">
+                                <h6 class="center">Chubut: Julio Argentino Roca 799 - Trelew</h6>
+                            </div>
+                            <div class="col s12 m4">
+                                <h6 class="center">Mendoza: Suipacha 800 - Mendoza Capital</h6>
+                            </div>
+                            <div class="col s12 m4">
+                                <h6 class="center">Neuquén: Gualeguay 348 - Neuquén</h6>
+                            </div>
+                            <div class="col s12 m4">
+                                <h6 class="center">Salta: Santiago del Estero 2099 - Salta</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer green center">
+        <div class="container">
+            <div class="row">
+                <div class="col l2 s12">
+                    <div class="imgFooter">
+                        <img src="img/logoBlanco.png" class="logo_footer" alt="Logo - BioMountain" />
+                    </div>
+                </div>
+
+                <div class="col l7 s12">
+                    <h5 class="white-text">Menú</h5>
+                    <ul>
+                        <li><a class="a_menu" href="index.html">Inicio</a></li>
+                        <li><a class="a_menu" href="productos.html">Productos</a></li>
+                        <li class="active">
+                            <a class="a_menu" href="contacto.html">Contacto</a>
+                        </li>
+                        <li><a class="a_menu" href="sucursales.html">Sucursales</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l3 s12 right redes-footer">
+                    <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                    <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                    <a href="https://www.pinterest.com/" class="fab fa-pinterest-p"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© Bio Mountain</p>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="js/materialize.min.js "></script>
+    <script src="js/materialize.js "></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                indicators: true,
+
+            });
+        });
+    </script>
+    <script src="js/script.js "></script>
+
+</body>
+
+</html>
