@@ -11,3 +11,7 @@ Este es un boceto de una pagina informativa y ecommerce, sobre packaging biodegr
 * Página tienda de productos.
 * Página de contacto.
 * Página de sucursales disponibles.
+## Integrantes:
+* Santiago Fagliano
+* Abril Lopez Ducas
+* Franco Reynoso
